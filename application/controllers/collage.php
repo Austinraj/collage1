@@ -4,33 +4,6 @@ class collage extends CI_Controller{
 		$mes['msg']="Your Registration From";
 		$this->load->view('staff_details.php',$mes);
 	}
-
-	public function editForm(){
-		extract($_POST);
-		$gender = null;
-
-		if(isset($Male)){
-			$gender="male";
-
-		}
-		else{
-			$gender="female";
-		}
-
-		$data["details"]=[
-			'name'=>$stname,
-			'email'=>$stemail,
-			'date'=>$stdate,
-          	'address'=>$staddress,
-          	'department'=>$stdept,
-          	'mobile'=>$stmobile,
-          	'gender'=>$stgender,
-          	'bloodgroup'=>$stblood
-		];
-		$this->load->view("result",$data);
-
-
-}
 	public function saveData(){
 		extract($_POST);
 		$gender = null;

@@ -49,6 +49,8 @@
 								<option default><?=$data[0]->department;?>
 					<option>IT
 					<option>CSE
+					<option>B.Sc
+					<option>M.Sc
 					<option>B.COM
 					<option>EEE
 					</select>
@@ -59,7 +61,7 @@
 				</tr>
 				<tr>
 					<td>Gender</td>
-					<td><input name="stgender" value="<?=$data[0]->gender?>"></td>
+					<td><input type="text" name="stgender" value="<?=$data[0]->gender?>"></td>
 				</tr>
 				<tr>
 					<td>Bloodgroup</td>

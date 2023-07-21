@@ -1,18 +1,15 @@
+//sample html
+
 <html>
 <head>
-	<title>registration</title>
+	<title>Result</title>
 </head>
 <body>
+	<h1>Confirmation</h1>
 	<?php
-	if (isset($status)){
-		echo $status;
-		echo '<br>' .$test;
-	}
-	if (isset($msg)){
-		echo '<h2>'.$msg.'<h2>';
-	}
+	if (isset($details)){
 	?>
-	<form action="<?=base_url('collage/savedata/')?>" method="post">
+	<form action="<?=base_url('collage/editForm/')?>" method="post">
 		<table cellspacing="20">
 			<tr>
 				<td>Name</td>
@@ -65,9 +62,11 @@
 	        <tr>
 				<td></td>
 	            <td>
-	            	<input type="submit" name="submit" value="Register">
-	            	<a href="<?=base_url('collage/fetchdata')?>">View Record</a></td>
+	            	<input type="submit" value="Confim"></td>
 	        </tr>
+	        <?php
+	    }
+	    ?>
 	    </table>
 	</form>
 </body>

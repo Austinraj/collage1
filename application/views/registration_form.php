@@ -1,3 +1,5 @@
+//sample html
+
 <html>
 <head>
 	<title>registration</title>
